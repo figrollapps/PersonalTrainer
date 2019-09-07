@@ -1,0 +1,3 @@
+UseTTS: true
+DefaultVoice: Amy
+ContentLocation: D:\files\Trainer\art

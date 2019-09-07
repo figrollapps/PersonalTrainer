@@ -1,0 +1,28 @@
+﻿<controls:MetroWindow x:Class="Figroll.PersonalTrainer.PersonalTrainerWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      mc:Ignorable="d"
+                      Title="PERSONAL TRAINER" Height="500" Width="700"
+                      BorderBrush="{DynamicResource AccentColorBrush}"
+                      BorderThickness="1"
+                      SaveWindowPosition="True"
+                      WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary
+                    Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedSingleRowTabControl.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/steel.xaml" />
+                <ResourceDictionary
+                    Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseDark.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid />
+</controls:MetroWindow>

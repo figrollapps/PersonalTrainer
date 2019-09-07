@@ -1,0 +1,24 @@
+source https://www.nuget.org/api/v2/
+
+nuget FAKE
+nuget MahApps.Metro
+nuget Caliburn.Metro 0.5.0 framework: >= net452
+nuget NLog.Config 4.1.2 framework: >= net452
+nuget NuGet.CommandLine 3.3.0 framework: >= net46
+nuget Rx-Main 2.2.5 framework: >= net46
+nuget ScriptCs.Engine.Roslyn 0.15.0 framework: >= net452
+nuget ScriptCs.Hosting 0.15.0 framework: >= net452
+nuget structuremap 3.1.6.186 framework: >= net452
+
+# Paket can only do so much with transitive dependencies and we 
+# need to force these specific version so that ScriptCS 0.15 works.
+# Without these if you regenerate the csproj references using paket
+# the app will blow up when you try to run a script trying to find
+# 2.1.2 of Common.Logging.  This is a hack and might go wrong but
+# is seemingly the best that can be done before ScriptCS fully
+# deprecates Common.Logging in a future version.
+
+nuget Common.Logging 2.1.2 framework: >= net452
+nuget AutoFac.Mef 3.0.3 framework: >= net452
+nuget AutoFac 3.3.1 framework: >= net452
+nuget YamlDotNet
